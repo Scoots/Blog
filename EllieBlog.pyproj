@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>EllieBlog</Name>
+    <RootNamespace>EllieBlog</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c1a863d1-7d38-48fc-9044-d68f9970a00c}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="EllieBlog\__init__.py" />
+    <Compile Include="EllieBlog\settings.py" />
+    <Compile Include="EllieBlog\urls.py" />
+    <Compile Include="EllieBlog\wsgi.py" />
+    <Compile Include="pages\home\__init__.py" />
+    <Compile Include="pages\home\models.py" />
+    <Compile Include="pages\home\tests.py" />
+    <Compile Include="pages\home\views.py" />
+    <Compile Include="pages\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebPiReference Include="https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml%3fDjango">
+      <Feed>https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml</Feed>
+      <ProductId>Django</ProductId>
+      <FriendlyName>Django 1.4</FriendlyName>
+    </WebPiReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EllieBlog\" />
+    <Folder Include="static\" />
+    <Folder Include="pages\" />
+    <Folder Include="pages\home\" />
+    <Folder Include="static\images\" />
+    <Folder Include="static\templates\" />
+    <Folder Include="static\styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="static\images\argyle_background.jpg" />
+    <Content Include="static\images\bloglovin.jpg" />
+    <Content Include="static\images\canvas_button_background.jpg" />
+    <Content Include="static\images\cute-little-bee.jpeg" />
+    <Content Include="static\images\cute-little-bee.png" />
+    <Content Include="static\images\feedly.jpg" />
+    <Content Include="static\images\header_art.jpg" />
+    <Content Include="static\images\heart_flower_background.jpg" />
+    <Content Include="static\images\hello_love_typewriter.jpeg" />
+    <Content Include="static\images\instagram.jpg" />
+    <Content Include="static\images\pastel_circle_icon.jpg" />
+    <Content Include="static\images\pastel_header_art.jpg" />
+    <Content Include="static\images\pinterest.jpg" />
+    <Content Include="static\images\pinterest.png" />
+    <Content Include="static\images\polka_dot_background.jpg" />
+    <Content Include="static\images\polka_dot_background_2.jpg" />
+    <Content Include="static\images\redwood_pic.jpg" />
+    <Content Include="static\images\redwood_pic.png" />
+    <Content Include="static\images\rss.jpg" />
+    <Content Include="static\images\twitter.jpg" />
+    <Content Include="static\images\typewriter_header.jpg" />
+    <Content Include="static\images\wiggle.png" />
+    <Content Include="static\images\wood_background.jpg" />
+    <Content Include="static\images\wood_background_2.jpg" />
+    <Content Include="static\styles\home.css" />
+    <Content Include="static\templates\home.html" />
+    <Content Include="static\templates\index.html" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50255</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

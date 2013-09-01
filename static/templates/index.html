@@ -1,0 +1,60 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Elizablog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!--<link rel="shortcut icon" href="/support/favicon.ico" />-->
+    <link rel="stylesheet" href="{{ /static/ }}styles/home.css" /> <!--{% static "/styles/home" %}" type="text/css" media="screen" /> -->
+  </head>
+  <body>
+    <div class="header clear">
+      <h2 class="left">Ellie Belly</h2>
+      <img src="{{ STATIC_URL }}images/cute-little-bee.png" style="height: 77.2%; margin-top: 6px;">
+      <a class="right" href="/support3/#!/contact">Contact</a>
+      <div class="header_divider right"></div>
+      <a class="right" href="/support3/#!/about">About</a>
+      <div class="header_divider right"></div>
+      <a class="right" href="/support3/#!/blog">Blog</a>
+      <div class="header_divider right"></div>
+      <a class="right" href="/support3/#!">Home</a>
+      <div class="header_divider right"></div>
+    </div>
+		<div class="header_padding"></div>
+		<div class="content_box">
+      <div class="split_70 left">
+        {% block content %}
+        {% endblock %}
+      </div>
+      <div class="split_30 left">
+        <div class="info_bar">
+          <h2> Info Bar Header </h2>
+          <p>
+            this is going to be where we have a whole bunch of text.  possibly describing how wonderful and amazing my wonderful and amazing ellie is, possibly something else.  We will see.  The trick right now is to figure out how much text is going to be in there, and then put it in there.  We can fill it with all the amazing words we need to later.  When english invents them.  Because it doesn't have good enough words... yet.
+          </p>
+          <h2 class="clear"> Follow me on things </h2>
+          <div class="left tiny_icon_box">
+            <img src="{{ STATIC_URL }}/images/pinterest.png" style="width: 100%">
+          </div>
+          <div class="left tiny_icon_box">
+            <img src="{{ STATIC_URL }}/images/pinterest.png" style="width: 100%">
+          </div>
+          <div class="left tiny_icon_box">
+            <img src="{{ STATIC_URL }}/images/pinterest.png" style="width: 100%">
+          </div>
+        </div>
+      </div>    
+    </div>
+	  <div class="footer_overline_border"></div>
+      <div class="footer_padding"></div>
+	    <div class="footer">
+    </div>
+  </body>
+</html>
