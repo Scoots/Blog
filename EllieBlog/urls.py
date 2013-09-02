@@ -8,7 +8,7 @@ import settings
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'pages.home.views.index', name='home'),
-    url(r'^static/(.*)$', 'django.views.static.serve', {'document_root':settings.STATIC_URL}),
+    url(r'home/$', 'pages.home.views.index', name='home'),
     # url(r'^EllieBlog/', include('EllieBlog.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
