@@ -3,6 +3,7 @@ body {
     background-repeat: repeat;
     margin: 0;
     padding: 0;
+    font-family: -moz-fixed;
 }
 
 .content_box {
@@ -10,18 +11,18 @@ body {
     -webkit-box-shadow: 9px 9px 27px rgba(0, 0, 0, 0.61);
     -moz-box-shadow:    9px 9px 27px rgba(0, 0, 0, 0.61);
     box-shadow:         9px 9px 27px rgba(0, 0, 0, 0.61);
-    margin-top: 108px;
+    margin-top: 30px;
 }
 
 .header {
-    background-image: url("../images/wood_background_2.jpg");
+    background-color: #DCE4E9;
     height: 135px;
     left: 0;
     position: absolute;
-    top: 15px;
     width: 100%;
     color: #000000;
-    font-family: 'Comic Sans MS';
+    border-top: 1px solid #38546D;
+    border-bottom: 2px solid #38546D;
 }
 
 .header_divider {
@@ -42,7 +43,7 @@ body {
     color: #000000;
     margin-left: 30px;
     margin-right: 30px;
-    margin-top: 15px;
+    margin-top: 22px;
     text-decoration: none;
 }
 
@@ -51,7 +52,12 @@ body {
 }
 
 .header_padding {
-    padding-top: 65px;
+    padding-top: 130px;
+}
+
+.header_underline {
+    border-bottom: 2px solid #38546D;
+    padding-top: 70px;
 }
 
 .header_box {
@@ -148,19 +154,24 @@ body {
 }
 
 .blog {
-
+    padding: 5px;
 }
 
 .blog_heading {
-
+    font-size: 26px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-transform: uppercase;
 }
 
 .blog_image_box {
-    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 28%;
 }
 
 .blog_text {
-
+    font-size: 12px;
 }
 
 .blog_button {
@@ -173,11 +184,18 @@ body {
     box-shadow: 6px 6px 0 #222222;
     -webkit-border-radius: 15px 60px 15px 60px;
     border-radius: 15px 60px 15px 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 .blog_button > a {
     text-decoration: none;
     color: #000;
+}
+
+.blog_divider {
+    border-bottom: 3px dotted #000;
 }
 
 .tiny_icon_box {
