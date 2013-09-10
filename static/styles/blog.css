@@ -1,0 +1,17 @@
+.blog_image_box {
+    background-color: #FFCCBA;
+    width: 25%;
+    height: auto;
+}
+
+.blog_heading {
+    font-size: 26px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.blog_image {
+    width: 100%;
+}

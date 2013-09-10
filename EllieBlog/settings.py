@@ -22,7 +22,7 @@ DATABASES = {
     }
 }
 
-BASE_DIR = 'E:/Projects/EllieBlog/'
+BASE_DIR = '/Users/shopp/Projects/Blog'
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
@@ -113,7 +113,7 @@ WSGI_APPLICATION = 'EllieBlog.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    os.path.join(BASE_DIR, 'static/templates'),
+    os.path.join(BASE_DIR, 'templates'),
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
